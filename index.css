@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: #055695;
+  height: 60px;
+  width: 100%;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header i {
+  font-size: 20px;
+  color: white;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.header i:hover {
+  transform: scale(1.2);
+}
+
+.header i:active {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.top-slider {
+  height: 475px;
+}
+
+.top-slider-container {
+  display: flex;
+  overflow: auto;
+  height: 475px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.top-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.top-slider-card {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+}
+
+.top-card-info {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: white;
+  padding: 0px 20px;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(to top, #02122B, #FFFFFF00);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.top-card-title {
+  margin: 10px 0px;
+  font-weight: 400;
+}
+
+.top-card-content {
+  margin: 0;
+  font-weight: 600;
+}
+
+#topCard1 {
+  background: url(top-slider-card-1.webp);
+}
+
+#topCard2 {
+  background: url(top-slider-card-2.webp);
+}
+
+#topCard3 {
+  background: url(top-slider-card-3.webp);
+}
+
+#topCard4 {
+  background: url(top-slider-card-4.webp);
+}
+
+#topCard5 {
+  background: url(top-slider-card-5.webp);
+}
+
+#topCard1, #topCard2, #topCard3, #topCard4, #topCard5 {
+  background-size: cover;
+  background-position: center;
+}
+
+.top-slider-btn-grp {
+  height: 10px;
+  width: 100px;
+  padding: 1px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-slider-nav-btns {
+  height: 10px;
+  width: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0px;
+  transition: 0.2s linear;
+}
+
+.top-slider-nav-btns.active {
+  background-color: #0A94FF;
+  height: 12px;
+  width: 12px;
+}
+
+.the-best-awards-container {
+  background: url(thebest.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  position: relative;
+}
+
+.the-best-awards-container h4 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+#theBestVoteNowBtn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0A94FF;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  height: 35px;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+#theBestVoteNowBtn:active {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.vote-for-the-best-container {
+  height: 250px;
+  width: 100%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.vote-for-the-best-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vote-for-the-best-title span {
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+#voteForBestSeeAllBtn {
+  margin-right: 15px;
+  background: transparent;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  color: #0A94FF;
+  height: 25px;
+  width: 70px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.vote-for-the-best-slider {
+  display: flex;
+  gap: 15px;
+  padding: 20px 15px;
+  overflow-x: auto;
+}
+
+.vote-for-the-best-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.vote-for-the-best-card {
+  height: 150px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.vote-for-the-best-card-img {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.vote-for-the-best-card-info {
+  font-weight: 600;
+  font-size: 11px;
+  display: block;
+  text-align: center;
+}
+
+.bottom-nav-bar {
+  height: 60px;
+  width: 100%;
+  background-color: #02122b;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  gap: 5px;
+  padding: 5px;
+  z-index: 2;
+}
+
+.bottom-nav-bar i {
+  color: #a5acbc;
+}
+
+.nav-bar-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 5px;
+}
+
+.nav-bar-btns:active {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.nav-bar-btns.active {
+  background-color: #055695;
+}
